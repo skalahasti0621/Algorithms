@@ -1,0 +1,9 @@
+def findNthFibonacciNumber(n):
+    if n<=1: 
+        return n
+    last=findNthFibonacciNumber(n-1)
+    slast=findNthFibonacciNumber(n-2)
+    return last+slast
+
+#print(findNthFibonacciNumber(4)) - 3
+#print(findNthFibonacciNumber(5)) - 5
